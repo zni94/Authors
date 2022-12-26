@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.c3ffc1e5.css",
-    "main.js": "/static/js/main.7eb5ac1e.js",
+    "main.css": "/static/css/main.0a8504b4.css",
+    "main.js": "/static/js/main.8e8e00d1.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
-    "static/media/background_img_1.jpg": "/static/media/background_img_1.0f46d74b76c3cbf5ad14.jpg",
     "static/media/authors_130.png": "/static/media/authors_130.5acaca26f1708a21aefc.png",
     "static/media/authors_137.png": "/static/media/authors_137.ec90985ba1856234393d.png",
     "static/media/authors_131.png": "/static/media/authors_131.6356eb08b29b2988033f.png",
@@ -25,6 +24,7 @@
     "static/media/authors_121.png": "/static/media/authors_121.05ecea390ee6793fc34d.png",
     "static/media/authors_114.png": "/static/media/authors_114.d37f6816ac059af141ae.png",
     "static/media/authors_117.png": "/static/media/authors_117.78fa07ccec8f28f33de9.png",
+    "static/media/background_img_1.jpg": "/static/media/background_img_1.7c0d3e1cb20b1770c4dd.jpg",
     "static/media/authors_119.png": "/static/media/authors_119.02b5dd556373ce69338d.png",
     "static/media/authors_115.png": "/static/media/authors_115.422a9ddb8dd05bb45167.png",
     "static/media/authors_118.png": "/static/media/authors_118.b5cf2119966b872ae162.png",
@@ -90,6 +90,7 @@
     "static/media/authors_54.png": "/static/media/authors_54.6d85cd7a3f47f5257154.png",
     "static/media/authors_53.png": "/static/media/authors_53.4f24f825ab683d0c51c2.png",
     "static/media/authors_52.png": "/static/media/authors_52.70fa5249666f240bcc04.png",
+    "static/media/background_img_about.jpg": "/static/media/background_img_about.2b40e60706afdfb0e3ae.jpg",
     "static/media/authors_51.png": "/static/media/authors_51.1ce702a9eba5bf5b429f.png",
     "static/media/authors_50.png": "/static/media/authors_50.6b2f8b4fcb6521c4fbea.png",
     "static/media/authors_49.png": "/static/media/authors_49.bf731eff4448ec7cdd96.png",
@@ -142,12 +143,12 @@
     "static/media/authors_2.png": "/static/media/authors_2.22b14822f8938cb31336.png",
     "static/media/authors_1.png": "/static/media/authors_1.b2117d6fc725cec65e00.png",
     "index.html": "/index.html",
-    "main.c3ffc1e5.css.map": "/static/css/main.c3ffc1e5.css.map",
-    "main.7eb5ac1e.js.map": "/static/js/main.7eb5ac1e.js.map",
+    "main.0a8504b4.css.map": "/static/css/main.0a8504b4.css.map",
+    "main.8e8e00d1.js.map": "/static/js/main.8e8e00d1.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3ffc1e5.css",
-    "static/js/main.7eb5ac1e.js"
+    "static/css/main.0a8504b4.css",
+    "static/js/main.8e8e00d1.js"
   ]
 }
