@@ -4,8 +4,8 @@
   background-image: url("../../img/background_img_1.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-origin: content-box;
 }
 
 /*# sourceMappingURL=main.css.map */

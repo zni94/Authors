@@ -3,6 +3,10 @@
   color: white;
 }
 
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
 ul {
   list-style: none;
 }
@@ -15,6 +19,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
   width: 250px;
   height: 60px;
   border: 2px solid #fff;
@@ -45,12 +50,26 @@ a {
   color: #000;
 }
 
-.active {
-  animation-name: show;
-  animation-duration: 1.5s;
-  animation-delay: 0s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
+.contents-layout {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 300px;
+  position: relative;
+}
+.contents-layout .contents-title {
+  margin-top: 100px;
+}
+.contents-layout .contents-body {
+  padding-right: 350px;
+}
+.contents-layout .contents-body p {
+  color: #333;
+  transition: all 1.5s;
+}
+.contents-layout .contents-body p:not(:last-child) {
+  margin-bottom: 5rem;
 }
 
 /*# sourceMappingURL=common.css.map */

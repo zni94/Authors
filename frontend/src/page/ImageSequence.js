@@ -22,7 +22,7 @@ const ImageSequence = () => {
     }, 4200 / 137);
 
     return () => clearInterval(interval);
-  }, [index]);
+  }, [index, dispatch, img]);
 
   return (
     <div id={"imageSequence"}>

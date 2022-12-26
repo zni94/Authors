@@ -3,6 +3,10 @@
   color: white;
 }
 
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
 ul {
   list-style: none;
 }
@@ -11,10 +15,11 @@ a {
   text-decoration: none;
 }
 
-.authors-btn{
+.authors-btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
   width: 250px;
   height: 60px;
   border: 2px solid #fff;
@@ -22,7 +27,7 @@ a {
   position: relative;
   cursor: pointer;
 
-  span{
+  span {
     width: 0;
     height: 100%;
     position: absolute;
@@ -32,7 +37,7 @@ a {
     transition: all .2s;
   }
 
-  p{
+  p {
     color: #fff;
     font-size: .8rem;
     font-weight: 600;
@@ -40,21 +45,39 @@ a {
   }
 }
 
-.authors-btn:hover{
-  span{
+.authors-btn:hover {
+  span {
     width: 100%;
   }
 
-  p{
+  p {
     color: #000;
 
   }
 }
 
-.active {
-  animation-name: show;
-  animation-duration: 1.5s;
-  animation-delay: 0s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
+.contents-layout {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 300px;
+  position: relative;
+
+  .contents-title {
+    margin-top: 100px;
+  }
+
+  .contents-body {
+    padding-right: 350px;
+
+    p {
+      color: #333;
+      transition: all 1.5s;
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+  }
 }

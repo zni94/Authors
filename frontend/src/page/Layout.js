@@ -5,30 +5,31 @@ import { useSelector } from "react-redux";
 import "../lib/css/layout.css";
 import "../lib/css/common.css";
 import Header from "../component/Header";
-import Main from './Main';
-import About from './About';
-import Gallery from './Gallery';
+import Main from "./Main";
+import About from "./About";
+import Gallery from "./Gallery";
+import SNS from "./SNS";
 
 const Layout = () => {
   const { isLoading } = useSelector((state) => state.loadingStore);
 
-   return (
-     <Fragment>
+  return (
+    <Fragment>
       {isLoading ? (
         <ImageSequence />
       ) : (
         <div className={"layout"}>
           <Header />
           <section>
-            <Main/>
-            <About/>
-            <Gallery/>
+            <Main />
+            <About />
+            <Gallery />
+            <SNS />
           </section>
         </div>
       )}
     </Fragment>
-    )
-
+  );
 };
 
 export default Layout;
