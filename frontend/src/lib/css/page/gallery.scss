@@ -11,8 +11,19 @@
       justify-content: space-between;
       align-items: center;
 
-      span.material-symbols-outlined {
+      button {
+        font-weight: 100;
+        font-size: .6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        text-transform: uppercase;
         cursor: pointer;
+      }
+
+      span.material-symbols-outlined {
+        margin: 0 .25rem;
       }
     }
   }

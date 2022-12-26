@@ -10,8 +10,18 @@
   justify-content: space-between;
   align-items: center;
 }
-#gallery .contents-layout .contents-body span.material-symbols-outlined {
+#gallery .contents-layout .contents-body button {
+  font-weight: 100;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  text-transform: uppercase;
   cursor: pointer;
+}
+#gallery .contents-layout .contents-body span.material-symbols-outlined {
+  margin: 0 0.25rem;
 }
 
 /*# sourceMappingURL=gallery.css.map */

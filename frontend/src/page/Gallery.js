@@ -38,20 +38,14 @@ const Gallery = () => {
       <div className={"contents-layout"}>
         <h2 className={"contents-title"}>Gallery</h2>
         <div className={"contents-body"}>
-          <span
-            className="material-symbols-outlined"
-            onClick={clickHandler}
-            data-type={"prev"}
-          >
-            arrow_back_ios
-          </span>
-          <span
-            className="material-symbols-outlined"
-            onClick={clickHandler}
-            data-type={"next"}
-          >
-            arrow_forward_ios
-          </span>
+          <button onClick={clickHandler} data-type={"prev"}>
+            <span className="material-symbols-outlined">arrow_back_ios</span>
+            prev
+          </button>
+          <button onClick={clickHandler} data-type={"next"}>
+            next
+            <span className="material-symbols-outlined">arrow_forward_ios</span>
+          </button>
         </div>
         <Button
           openLink={"https://www.instagram.com/yuri_authors/"}
