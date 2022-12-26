@@ -7,10 +7,23 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
+  background-color: #000;
+
+  #backgroundImg {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+
+    transition: all 1.5s;
+  }
 
   .contents-layout {
-
     .contents-body {
+      padding-right: 350px;
+
       p {
         color: #333;
         transition: all 1.5s;
@@ -24,6 +37,10 @@
 }
 
 #about.active {
+  #backgroundImg {
+    opacity: 0;
+  }
+
   .contents-layout {
     .contents-body {
       p {

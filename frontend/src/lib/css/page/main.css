@@ -1,11 +1,19 @@
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #main {
-  padding-top: 80px;
-  height: calc(100% - 80px);
-  background-image: url("../../img/background_img_1.jpg");
+  height: 100%;
+  background-image: url("../../img/authors_title.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-origin: content-box;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /*# sourceMappingURL=main.css.map */

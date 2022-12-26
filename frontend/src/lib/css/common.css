@@ -61,9 +61,6 @@ a {
 .contents-layout .contents-title {
   margin-top: 100px;
 }
-.contents-layout .contents-body {
-  padding-right: 350px;
-}
 .contents-layout .contents-body p {
   color: #333;
   transition: all 1.5s;

@@ -2,8 +2,18 @@
   padding-top: 80px;
   height: calc(100% - 80px);
   position: relative;
+  background-color: rgba(0, 0, 0, 0);
 
-  .contents {
-    margin: 0 300px;
+  .contents-layout {
+    .contents-body {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      span.material-symbols-outlined {
+        cursor: pointer;
+      }
+    }
   }
 }

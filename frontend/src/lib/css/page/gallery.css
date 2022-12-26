@@ -2,9 +2,16 @@
   padding-top: 80px;
   height: calc(100% - 80px);
   position: relative;
+  background-color: rgba(0, 0, 0, 0);
 }
-#gallery .contents {
-  margin: 0 300px;
+#gallery .contents-layout .contents-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#gallery .contents-layout .contents-body span.material-symbols-outlined {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=gallery.css.map */

@@ -6,6 +6,7 @@ const About = () => {
   return (
     <Fragment>
       <div id={"about"}>
+        <div id={"backgroundImg"} />
         <div className={"contents-layout"}>
           <h2 className={"contents-title"}>About</h2>
           <div className={"contents-body"}>

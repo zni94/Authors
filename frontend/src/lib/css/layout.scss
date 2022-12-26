@@ -13,18 +13,16 @@
   user-select: none;
 
   #backgroundImage {
-    margin-top: 15px;
     width: 100%;
     height: 100%;
     position: fixed;
-    opacity: 0;
 
-    background-image: url('../img/background_img_1.jpg');
+    background-image: url('../img/tattoo/preview_1.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 
-    animation: show 1.5s 1.5s forwards linear;
+    transition: all .5s;
   }
 
   header {

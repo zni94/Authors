@@ -19,6 +19,7 @@ const Layout = () => {
         <ImageSequence />
       ) : (
         <div className={"layout"}>
+          <div id={"backgroundImage"} />
           <Header />
           <section>
             <Main />

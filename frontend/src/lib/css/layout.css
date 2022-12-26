@@ -12,16 +12,14 @@
   user-select: none;
 }
 .layout #backgroundImage {
-  margin-top: 15px;
   width: 100%;
   height: 100%;
   position: fixed;
-  opacity: 0;
-  background-image: url("../img/background_img_1.jpg");
+  background-image: url("../img/tattoo/preview_1.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
-  animation: show 1.5s 1.5s forwards linear;
+  background-size: cover;
+  transition: all 0.5s;
 }
 .layout header {
   width: 100%;
