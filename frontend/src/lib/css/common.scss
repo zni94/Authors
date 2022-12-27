@@ -42,6 +42,7 @@ a {
     font-size: .8rem;
     font-weight: 600;
     z-index: 1;
+    text-transform: uppercase;
   }
 }
 
@@ -71,6 +72,7 @@ a {
   .contents-body {
     p {
       color: #333;
+      font-weight: 100;
       transition: all 1.5s;
     }
 

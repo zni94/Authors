@@ -15,21 +15,21 @@
   width: 100%;
   height: 100%;
   position: fixed;
-  background-image: url("../img/tattoo/preview_1.jpg");
+  background-image: url("../img/gallery/preview_1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  animation-name: show;
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
   transition: all 0.5s;
 }
 .layout header {
   width: 100%;
   position: fixed;
   backdrop-filter: blur(10px);
-  animation-name: show;
-  animation-duration: 1.5s;
-  animation-delay: 0s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
   z-index: 10;
 }
 .layout header .corner-top-left {
@@ -48,14 +48,14 @@
   right: 0;
   top: 0;
 }
-.layout header #linkToPage {
+.layout header nav {
   width: 100%;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.layout header #linkToPage ul {
+.layout header nav ul {
   padding: 0;
   margin: 15px 0;
   width: 400px;
@@ -64,7 +64,7 @@
   align-items: center;
   list-style: none;
 }
-.layout header #linkToPage ul li {
+.layout header nav ul li {
   flex: 1 1;
   display: flex;
   flex-direction: column;
@@ -72,29 +72,57 @@
   text-align: center;
   position: relative;
 }
-.layout header #linkToPage ul li a {
+.layout header nav ul li a {
   margin-top: 5px;
   font-size: 0.8rem;
+  font-weight: 600;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
-.layout header #linkToPage ul li svg {
+.layout header nav ul li svg {
   opacity: 0;
   transition: all 0.5s;
 }
-.layout header #linkToPage ul li:hover {
+.layout header nav ul li svg path {
+  stroke: white;
+  fill: white;
+}
+.layout header nav ul li:hover {
   cursor: pointer;
 }
-.layout header #linkToPage ul li:hover svg {
+.layout header nav ul li:hover svg {
   opacity: 1;
 }
-.layout header #linkToPage ul li[aria-current=page] svg {
+.layout header nav ul li[aria-current=page] svg {
   opacity: 1;
 }
 .layout section {
   height: 100%;
   position: relative;
+}
+
+header.transform nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header.transform nav ul li {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+header.transform nav ul li a {
+  color: #000 !important;
+}
+header.transform nav ul li svg path {
+  stroke: black;
+  fill: black;
 }
 
 /*# sourceMappingURL=layout.css.map */

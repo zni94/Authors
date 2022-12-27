@@ -6,7 +6,7 @@ const About = () => {
   return (
     <Fragment>
       <div id={"about"}>
-        <div id={"backgroundImg"} />
+        <div id={"aboutImg"} />
         <div className={"contents-layout"}>
           <h2 className={"contents-title"}>About</h2>
           <div className={"contents-body"}>
@@ -26,7 +26,7 @@ const About = () => {
           </div>
           <Button
             openLink={"https://www.instagram.com/yuri_authors/"}
-            btnName={"VIEW MORE"}
+            btnName={"view more"}
           />
         </div>
       </div>

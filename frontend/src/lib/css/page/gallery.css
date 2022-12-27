@@ -5,6 +5,7 @@
   background-color: rgba(0, 0, 0, 0);
 }
 #gallery .contents-layout .contents-body {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,9 +20,22 @@
   background-color: transparent;
   text-transform: uppercase;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 #gallery .contents-layout .contents-body span.material-symbols-outlined {
   margin: 0 0.25rem;
+}
+
+@media (max-width: 1420px) {
+  #gallery .contents-layout {
+    height: 100%;
+    margin: 0 30px;
+    align-items: center;
+  }
+  #gallery .contents-layout .contents-body {
+    padding-right: 0;
+  }
 }
 
 /*# sourceMappingURL=gallery.css.map */

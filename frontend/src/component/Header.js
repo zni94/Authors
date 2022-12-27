@@ -4,7 +4,7 @@ import Nav from "./Nav";
 const Header = () => {
   return (
     <Fragment>
-      <header>
+      <header id={"header"}>
         <Nav />
       </header>
     </Fragment>
