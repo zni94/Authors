@@ -7,7 +7,6 @@
   }
 }
 .layout {
-  height: 100%;
   color: white;
   user-select: none;
 }
@@ -15,7 +14,6 @@
   width: 100%;
   height: 100%;
   position: fixed;
-  background-image: url("../img/gallery/preview_1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -29,7 +27,11 @@
 .layout header {
   width: 100%;
   position: fixed;
-  backdrop-filter: blur(10px);
+  animation-name: show;
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
   z-index: 10;
 }
 .layout header .corner-top-left {
@@ -98,8 +100,63 @@
   opacity: 1;
 }
 .layout section {
-  height: 100%;
   position: relative;
+}
+.layout footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.5) 25%, rgb(0, 0, 0));
+}
+.layout footer h3 {
+  margin-top: 2rem;
+}
+.layout footer div {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.layout footer div img {
+  width: 18px;
+  height: 18px;
+}
+.layout footer p {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.layout a#topBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  outline: none;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: #fff 0 0 12px 0;
+}
+.layout a#topBtn.active {
+  opacity: 1;
+}
+.layout a#topBtn.transform {
+  background-color: #000;
+  color: #fff;
+  box-shadow: #000 0 0 12px 0;
 }
 
 header.transform nav {

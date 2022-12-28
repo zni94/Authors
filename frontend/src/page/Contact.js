@@ -8,7 +8,11 @@ const Contact = () => {
       <div className={"contents-layout"}>
         <h2 className={"contents-title"}>Contact</h2>
         <div className={"contents-body"}>
-          <p>contact coming soon . . .</p>
+          <p>Gangnam-daero 124-gil, Gangnam-gu, Seoul, 46</p>
+          <p>Anything else...?</p>
+          <p>
+            You can send a message by clicking the button below. (Only Kakao)
+          </p>
         </div>
         <Button
           openLink={"https://open.kakao.com/me/yuri_authors"}

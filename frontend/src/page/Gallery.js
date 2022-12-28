@@ -4,10 +4,17 @@ import Button from "../component/Button";
 import preview_1 from "../lib/img/gallery/preview_1.jpg";
 import preview_2 from "../lib/img/gallery/preview_2.jpg";
 import preview_3 from "../lib/img/gallery/preview_3.jpg";
+import { useEffect, useState } from "react";
 
 const Gallery = () => {
-  const galleryList = [preview_1, preview_2, preview_3];
-  let index = 0;
+  const [galleryList] = useState([preview_1, preview_2, preview_3]);
+  let index = Math.floor(Math.random() * galleryList.length);
+
+  useEffect(() => {
+    const background = document.getElementById("backgroundImage");
+
+    background.style.backgroundImage = `url(${galleryList[index]})`;
+  }, [index, galleryList]);
 
   const clickHandler = (e) => {
     const type = e.currentTarget.dataset.index;
@@ -34,7 +41,6 @@ const Gallery = () => {
   return (
     <div id={"gallery"}>
       <div className={"contents-layout"}>
-        <h2 className={"contents-title"}></h2>
         <div className={"contents-body"}>
           <button onClick={clickHandler} data-index={"prev"}>
             <span className="material-symbols-outlined">arrow_back_ios</span>

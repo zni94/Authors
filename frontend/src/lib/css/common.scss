@@ -15,6 +15,11 @@ a {
   text-decoration: none;
 }
 
+#emptySection {
+  height: 100vh;
+  position: relative;
+}
+
 .authors-btn {
   display: flex;
   justify-content: center;
@@ -67,9 +72,12 @@ a {
 
   .contents-title {
     margin-top: 100px;
+    margin-bottom: 6rem;
   }
 
   .contents-body {
+    margin-bottom: 6rem;
+
     p {
       color: #333;
       font-weight: 100;
@@ -77,7 +85,7 @@ a {
     }
 
     p:not(:last-child) {
-      margin-bottom: 5rem;
+      margin-bottom: 3.5rem;
     }
   }
 }

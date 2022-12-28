@@ -6,25 +6,20 @@
     opacity: 1;
   }
 }
-#main {
-  height: 100%;
+#home {
+  height: 100vh;
   background-image: url("../../img/authors_title.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-origin: content-box;
   background-color: rgba(0, 0, 0, 0.7);
-  animation-name: show;
-  animation-duration: 2s;
-  animation-delay: 0s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
 }
 
 @media (max-width: 1200px) {
-  #main {
+  #home {
     background-size: contain;
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=home.css.map */

@@ -1,13 +1,12 @@
 #contact {
   padding-top: 80px;
-  height: calc(100% - 80px);
   position: relative;
+  background-color: #fff;
   transition: all 0.5s;
   background-image: url("../../img/background_img_contact.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-  background-color: #fff;
 }
 #contact #contactImg {
   width: 100%;
@@ -43,6 +42,25 @@
 }
 #contact.active .contents-layout .contents-body p {
   color: #000;
+}
+
+@media (max-width: 1420px) {
+  #contact #contactImg {
+    opacity: 0.85 !important;
+  }
+  #contact .contents-layout {
+    height: 100%;
+    margin: 0 30px;
+  }
+}
+@media (max-width: 768px) {
+  #contact {
+    background-size: cover;
+    background-position: center;
+  }
+  #contact .contents-layout {
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=contact.css.map */

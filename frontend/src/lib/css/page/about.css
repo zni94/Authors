@@ -1,6 +1,5 @@
 #about {
   padding-top: 80px;
-  height: calc(100% - 80px);
   position: relative;
   background-image: url("../../img/background_img_about.jpg");
   background-repeat: no-repeat;
@@ -20,13 +19,6 @@
 #about .contents-layout .contents-body {
   padding-right: 350px;
 }
-#about .contents-layout .contents-body p {
-  color: #333;
-  transition: all 1.5s;
-}
-#about .contents-layout .contents-body p:not(:last-child) {
-  margin-bottom: 5rem;
-}
 
 #about.active #aboutImg {
   opacity: 0;
@@ -36,17 +28,15 @@
 }
 
 @media (max-width: 1420px) {
+  #about #aboutImg {
+    opacity: 0.85 !important;
+  }
   #about .contents-layout {
     height: 100%;
     margin: 0 30px;
   }
   #about .contents-layout .contents-body {
     padding-right: 0;
-  }
-}
-@media (max-width: 1420px) {
-  #about #aboutImg {
-    opacity: 0.85 !important;
   }
 }
 @media (max-width: 768px) {

@@ -1,11 +1,12 @@
 #gallery {
   padding-top: 80px;
-  height: calc(100% - 80px);
+  height: calc(100vh - 80px);
   position: relative;
   background-color: rgba(0, 0, 0, 0);
 }
 #gallery .contents-layout .contents-body {
   width: 100%;
+  height: calc(100% - 114px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -35,6 +36,17 @@
   }
   #gallery .contents-layout .contents-body {
     padding-right: 0;
+  }
+}
+@media (max-height: 768px) {
+  .contents-layout {
+    align-items: flex-start !important;
+  }
+  .contents-layout .contents-title {
+    margin-top: 50px;
+  }
+  .contents-layout .authors-btn {
+    margin-bottom: 50px;
   }
 }
 

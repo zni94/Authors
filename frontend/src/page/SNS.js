@@ -4,15 +4,15 @@ import Button from "../component/Button";
 const SNS = () => {
   return (
     <div id={"sns"}>
-      <div id={"snsImg"} />
       <div className={"contents-layout"}>
-        <h2 className={"contents-title"}></h2>
+        <div id={"snsImg"} />
         <div className={"contents-body"}>
           <iframe
             width={"100%"}
             height="315"
             src="https://www.youtube.com/embed/Scni6nLKm3M?controls=1"
             title="YouTube video player"
+            frameBorder={0}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
@@ -27,9 +27,6 @@ const SNS = () => {
             </p>
             <p>
               There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which don't look even
-              slightly believable.
             </p>
           </div>
         </div>
