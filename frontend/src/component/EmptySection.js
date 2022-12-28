@@ -22,7 +22,7 @@ const EmptySection = (props) => {
 
   return (
     <div
-      id={"emptySection"}
+      name={"emptySection"}
       style={{
         backgroundImage: `${linearGradient}`,
       }}

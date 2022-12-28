@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 
-#emptySection {
+[name='emptySection'] {
   height: 100vh;
   position: relative;
 }
@@ -31,6 +31,7 @@ a {
   background-color: transparent;
   position: relative;
   cursor: pointer;
+  transition: all .5s;
 
   span {
     width: 0;
@@ -69,6 +70,7 @@ a {
   justify-content: space-between;
   margin: 0 300px;
   position: relative;
+  transition: all .5s;
 
   .contents-title {
     margin-top: 100px;

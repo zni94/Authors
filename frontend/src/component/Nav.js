@@ -31,7 +31,9 @@ const Nav = () => {
 
       // PAGE: MAIN
       if (posY < section.about.offsetTop - 80) {
+        part.header.classList.remove("transform");
         part.top.classList.remove("active");
+        part.top.classList.remove("transform");
         return setPage(null);
       }
       // PAGE: ABOUT

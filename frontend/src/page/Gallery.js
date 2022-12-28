@@ -10,11 +10,13 @@ const Gallery = () => {
   const [galleryList] = useState([preview_1, preview_2, preview_3]);
   let index = Math.floor(Math.random() * galleryList.length);
 
+  const [view, setView] = useState(false);
+
   useEffect(() => {
     const background = document.getElementById("backgroundImage");
 
     background.style.backgroundImage = `url(${galleryList[index]})`;
-  }, [index, galleryList]);
+  }, []);
 
   const clickHandler = (e) => {
     const type = e.currentTarget.dataset.index;
@@ -38,9 +40,36 @@ const Gallery = () => {
     }
   };
 
+  const viewHandler = () => {
+    const viewMode = document.getElementById("viewMode");
+
+    const header = document.querySelector("header");
+    const gallery = document.getElementById("gallery");
+
+    if (view) {
+      setView(false);
+      viewMode.classList.add("off");
+      viewMode.classList.remove("on");
+
+      header.classList.remove("view");
+    } else {
+      window.location.href = "#gallery";
+      document.querySelector("html").style.overflow = "hidden;";
+      setView(true);
+      viewMode.classList.remove("off");
+      viewMode.classList.add("on");
+
+      header.classList.add("view");
+    }
+  };
+
   return (
     <div id={"gallery"}>
       <div className={"contents-layout"}>
+        <div id={"viewMode"} className={"off"}>
+          <div id={"viewState"}>{view ? "ON" : "OFF"}</div>
+          <button onClick={viewHandler} />
+        </div>
         <div className={"contents-body"}>
           <button onClick={clickHandler} data-index={"prev"}>
             <span className="material-symbols-outlined">arrow_back_ios</span>
