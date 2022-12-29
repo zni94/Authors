@@ -20,6 +20,7 @@ const Layout = () => {
   const viewHandler = () => {
     const layout = document.getElementById("layout");
     document.querySelector("html").style.overflow = "auto";
+    document.exitFullscreen();
     layout.classList.remove("view");
   };
 
@@ -29,7 +30,7 @@ const Layout = () => {
         <Welcome />
       ) : (
         <div id={"layout"}>
-          <div id={"closeBtn"} onClick={viewHandler}>
+          <div id={"viewMode"} onClick={viewHandler}>
             &times;
           </div>
           <div id={"backgroundImage"} />

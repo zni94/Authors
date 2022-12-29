@@ -9,7 +9,7 @@
 #layout {
   color: white;
 }
-#layout #closeBtn {
+#layout #viewMode {
   position: fixed;
   opacity: 0;
   font-weight: 700;
