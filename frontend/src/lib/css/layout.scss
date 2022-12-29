@@ -7,8 +7,21 @@
   }
 }
 
-.layout {
+#layout {
   color: white;
+
+  #closeBtn {
+    position: fixed;
+    opacity: 0;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.5rem;
+    top: 50px;
+    right: 50px;
+    transition: all .5s;
+    z-index: 11;
+    cursor: pointer;
+  }
 
   // BACKGROUND IMAGE
   #backgroundImage {
@@ -34,7 +47,7 @@
     width: 100%;
     position: fixed;
     transition: all .5s;
-
+    backdrop-filter: blur(3px);
     z-index: 10;
 
     nav {
@@ -74,6 +87,7 @@
             color: white;
             text-decoration: none;
             text-transform: uppercase;
+            transition: all .5s;
           }
 
           svg {
@@ -136,24 +150,6 @@
     }
   }
 
-  header.view {
-    opacity: 0;
-  }
-
-  header.view ~ section {
-    .contents-layout {
-      margin: 0 50px;
-    }
-
-    .authors-btn {
-      opacity: 0;
-    }
-  }
-
-  header.view ~ a#topBtn {
-    opacity: 0;
-  }
-
   // SECTION
   section {
     position: relative;
@@ -211,8 +207,8 @@
     font-weight: bold;
     border-radius: 100%;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 50px;
+    right: 50px;
     opacity: 0;
     transition: all .5s;
     box-shadow: #fff 0 0 12px 0;
@@ -226,6 +222,30 @@
     background-color: #000;
     color: #fff;
     box-shadow: #000 0 0 12px 0;
+  }
+}
+
+#layout.view {
+  #closeBtn {
+    opacity: 1;
+  }
+
+  header {
+    opacity: 0;
+  }
+
+  section {
+    .contents-layout {
+      margin: 0 50px;
+    }
+
+    .authors-btn {
+      opacity: 0;
+    }
+  }
+
+  a#topBtn {
+    opacity: 0;
   }
 }
 

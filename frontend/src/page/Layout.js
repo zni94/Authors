@@ -17,12 +17,21 @@ import EmptySection from "../component/EmptySection";
 const Layout = () => {
   const { isLoading } = useSelector((state) => state.loadingStore);
 
+  const viewHandler = () => {
+    const layout = document.getElementById("layout");
+    document.querySelector("html").style.overflow = "auto";
+    layout.classList.remove("view");
+  };
+
   return (
     <Fragment>
       {isLoading ? (
         <Welcome />
       ) : (
-        <div className={"layout"}>
+        <div id={"layout"}>
+          <div id={"closeBtn"} onClick={viewHandler}>
+            &times;
+          </div>
           <div id={"backgroundImage"} />
           <Header />
           <section>

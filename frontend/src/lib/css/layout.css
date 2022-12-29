@@ -6,10 +6,22 @@
     opacity: 1;
   }
 }
-.layout {
+#layout {
   color: white;
 }
-.layout #backgroundImage {
+#layout #closeBtn {
+  position: fixed;
+  opacity: 0;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.5rem;
+  top: 50px;
+  right: 50px;
+  transition: all 0.5s;
+  z-index: 11;
+  cursor: pointer;
+}
+#layout #backgroundImage {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -23,13 +35,14 @@
   animation-fill-mode: forwards;
   transition: all 0.5s;
 }
-.layout header {
+#layout header {
   width: 100%;
   position: fixed;
   transition: all 0.5s;
+  backdrop-filter: blur(3px);
   z-index: 10;
 }
-.layout header nav {
+#layout header nav {
   width: 100%;
   height: 80px;
   display: flex;
@@ -41,7 +54,7 @@
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
-.layout header nav ul {
+#layout header nav ul {
   padding: 0;
   margin: 15px 0;
   width: 400px;
@@ -50,7 +63,7 @@
   align-items: center;
   list-style: none;
 }
-.layout header nav ul li {
+#layout header nav ul li {
   flex: 1 1;
   display: flex;
   flex-direction: column;
@@ -58,39 +71,40 @@
   text-align: center;
   position: relative;
 }
-.layout header nav ul li a {
+#layout header nav ul li a {
   margin-top: 5px;
   font-size: 0.8rem;
   font-weight: 600;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.5s;
 }
-.layout header nav ul li svg {
+#layout header nav ul li svg {
   opacity: 0;
   transition: all 0.5s;
 }
-.layout header nav ul li svg path {
+#layout header nav ul li svg path {
   stroke: white;
   fill: white;
 }
-.layout header nav ul li:hover {
+#layout header nav ul li:hover {
   cursor: pointer;
 }
-.layout header nav ul li:hover svg {
+#layout header nav ul li:hover svg {
   opacity: 1;
 }
-.layout header nav ul li[aria-current=page] svg {
+#layout header nav ul li[aria-current=page] svg {
   opacity: 1;
 }
-.layout header.transform nav {
+#layout header.transform nav {
   width: 100%;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.layout header.transform nav ul li {
+#layout header.transform nav ul li {
   flex: 1 1;
   display: flex;
   flex-direction: column;
@@ -98,29 +112,17 @@
   text-align: center;
   position: relative;
 }
-.layout header.transform nav ul li a {
+#layout header.transform nav ul li a {
   color: #000 !important;
 }
-.layout header.transform nav ul li svg path {
+#layout header.transform nav ul li svg path {
   stroke: black;
   fill: black;
 }
-.layout header.view {
-  opacity: 0;
-}
-.layout header.view ~ section .contents-layout {
-  margin: 0 50px;
-}
-.layout header.view ~ section .authors-btn {
-  opacity: 0;
-}
-.layout header.view ~ a#topBtn {
-  opacity: 0;
-}
-.layout section {
+#layout section {
   position: relative;
 }
-.layout footer {
+#layout footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,27 +131,27 @@
   position: relative;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.5) 25%, rgb(0, 0, 0));
 }
-.layout footer h3 {
+#layout footer h3 {
   margin-top: 2rem;
 }
-.layout footer div {
+#layout footer div {
   width: 200px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
-.layout footer div img {
+#layout footer div img {
   width: 18px;
   height: 18px;
 }
-.layout footer p {
+#layout footer p {
   position: absolute;
   bottom: 0;
   font-size: 0.8rem;
   text-align: center;
 }
-.layout a#topBtn {
+#layout a#topBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,19 +164,35 @@
   font-weight: bold;
   border-radius: 100%;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 50px;
+  right: 50px;
   opacity: 0;
   transition: all 0.5s;
   box-shadow: #fff 0 0 12px 0;
 }
-.layout a#topBtn.active {
+#layout a#topBtn.active {
   opacity: 1;
 }
-.layout a#topBtn.transform {
+#layout a#topBtn.transform {
   background-color: #000;
   color: #fff;
   box-shadow: #000 0 0 12px 0;
+}
+
+#layout.view #closeBtn {
+  opacity: 1;
+}
+#layout.view header {
+  opacity: 0;
+}
+#layout.view section .contents-layout {
+  margin: 0 50px;
+}
+#layout.view section .authors-btn {
+  opacity: 0;
+}
+#layout.view a#topBtn {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=layout.css.map */
