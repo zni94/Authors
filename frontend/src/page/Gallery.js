@@ -1,38 +1,76 @@
+import { Fragment } from "react";
+
 import "../lib/css/page/gallery.css";
 
-import preview_1 from "../lib/img/gallery/preview_1.jpg";
-import preview_2 from "../lib/img/gallery/preview_2.jpg";
-import preview_3 from "../lib/img/gallery/preview_3.jpg";
-import { useEffect, useState } from "react";
-
 const Gallery = () => {
-  const [galleryList] = useState([preview_1, preview_2, preview_3]);
-  let index = Math.floor(Math.random() * galleryList.length);
-
-  useEffect(() => {
-    const background = document.getElementById("backgroundImage");
-
-    background.style.backgroundImage = `url(${galleryList[index]})`;
-  }, [galleryList, index]);
-
-  const viewHandler = () => {
-    const layout = document.getElementById("layout");
-    document.querySelector("html").style.overflow = "hidden";
-    document.documentElement.requestFullscreen();
-    layout.classList.add("view");
-  };
-
   return (
-    <div id={"gallery"}>
-      <div className={"contents-layout"}>
-        <h2 className={"contents-title"} />
-        <div className={"contents-body"} />
-        <a href={"#gallery"} className={"authors-btn"} onClick={viewHandler}>
-          <span></span>
-          <p>VIEW MORE</p>
-        </a>
+    <Fragment>
+      <div className={"background-image"} id={"gallery"}>
+        <div id={"opacity"} />
+        <p is={"title"}>Art Gallery</p>
+
+        <div className={"background-image art"} id={"img1"}>
+          <div>
+            <p is={"sub-title"}>Lorem Ipsum</p>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+          </div>
+        </div>
+        <div className={"background-image art"} id={"img2"}>
+          <div>
+            <p is={"sub-title"}>Lorem Ipsum</p>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+          </div>
+        </div>
+        <div className={"background-image art"} id={"img3"}>
+          <div>
+            <p is={"sub-title"}>Lorem Ipsum</p>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+          </div>
+        </div>
+        <div className={"background-image art"} id={"img4"}>
+          <div>
+            <p is={"sub-title"}>Lorem Ipsum</p>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+          </div>
+        </div>
+        <div className={"background-image art"} id={"img5"}>
+          <div>
+            <p is={"sub-title"}>Lorem Ipsum</p>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+          </div>
+        </div>
+
+        <p is={"summary"} id={"summary1"}>
+          <span is={"sub-title"}>Lorem Ipsum</span>
+          <span>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.{" "}
+          </span>
+        </p>
+        <p is={"summary"} id={"summary2"}>
+          <span is={"sub-title"}>Lorem Ipsum</span>
+          <span>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.{" "}
+          </span>
+        </p>
       </div>
-    </div>
+    </Fragment>
   );
 };
 

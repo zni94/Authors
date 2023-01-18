@@ -1,53 +1,107 @@
 #gallery {
-  padding-top: 80px;
-  height: calc(100vh - 80px);
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-}
-#gallery .contents-layout .contents-body {
-  flex: 1;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  height: 3070px;
+  text-align: center;
+  position: relative;
+  background-image: url("../../img/background_img_gallery.jpg");
+  margin-bottom: 100px;
 }
-#gallery .contents-layout .contents-body button {
-  font-weight: 100;
-  font-size: 0.6rem;
+#gallery #opacity {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+#gallery [is=summary] {
+  width: 640px;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
+  text-align: left;
+  position: absolute;
+}
+#gallery [is=summary] span {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#gallery [is=summary] span:first-child {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#gallery #summary1 {
+  top: 970px;
+  right: 320px;
+}
+#gallery #summary2 {
+  top: 2140px;
+  left: 320px;
+}
+#gallery .art {
+  position: absolute;
+  background-color: white;
+  margin: 0;
+}
+#gallery .art div {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  background-color: transparent;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: none;
-  outline: none;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
 }
-#gallery .contents-layout .contents-body span.material-symbols-outlined {
-  margin: 0 0.25rem;
+#gallery .art div p {
+  margin-left: 50px;
+  margin-right: 50px;
 }
-
-@media (max-width: 1420px) {
-  #gallery .contents-layout {
-    height: 100%;
-    margin: 0 30px;
-    align-items: center;
-  }
-  #gallery .contents-layout .contents-body {
-    padding-right: 0;
-  }
+#gallery .art div p[is=sub-title] {
+  font-weight: bold;
+  margin-bottom: 50px;
 }
-@media (max-height: 768px) {
-  .contents-layout {
-    align-items: flex-start !important;
-  }
-  .contents-layout .contents-title {
-    margin-top: 50px;
-  }
-  .contents-layout .authors-btn {
-    margin-bottom: 50px;
-  }
+#gallery .art:hover div {
+  opacity: 1;
+}
+#gallery #img1 {
+  width: 480px;
+  height: 520px;
+  top: 350px;
+  right: 320px;
+  background-image: url("../../img/gallery/tattoo_1.jpg");
+}
+#gallery #img2 {
+  width: 420px;
+  height: 810px;
+  top: 540px;
+  left: 160px;
+  background-image: url("../../img/gallery/tattoo_2.jpg");
+}
+#gallery #img3 {
+  width: 520px;
+  height: 680px;
+  top: 1270px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../../img/gallery/tattoo_3.jpg");
+}
+#gallery #img4 {
+  width: 420px;
+  height: 810px;
+  top: 1870px;
+  right: 160px;
+  background-image: url("../../img/gallery/tattoo_4.jpg");
+}
+#gallery #img5 {
+  width: 480px;
+  height: 520px;
+  top: 2350px;
+  left: 320px;
+  background-image: url("../../img/gallery/tattoo_5.jpg");
 }
 
 /*# sourceMappingURL=gallery.css.map */

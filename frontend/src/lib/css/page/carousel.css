@@ -1,0 +1,54 @@
+.btn {
+  cursor: pointer;
+}
+
+#carousel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 820px;
+  position: relative;
+  transition: all 0.5s;
+}
+#carousel #leftArrow {
+  position: absolute;
+  margin-left: 160px;
+}
+#carousel #rightArrow {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  margin-right: 160px;
+}
+#carousel #rightArrow p {
+  margin-right: 20px;
+  font-size: var(--font-contents);
+}
+#carousel #rightArrow p span[aria-current=page] {
+  font-size: var(--font-sub-title);
+  font-weight: bold;
+}
+
+#logoImg {
+  width: 100%;
+  text-align: center;
+  padding: 13px 0;
+  margin-bottom: 100px;
+  position: relative;
+}
+#logoImg img {
+  width: 240px;
+  height: 80px;
+}
+
+@media (max-width: 1080px) {
+  #carousel #leftArrow {
+    margin-left: 40px;
+  }
+  #carousel #rightArrow {
+    margin-right: 40px;
+  }
+}
+
+/*# sourceMappingURL=carousel.css.map */

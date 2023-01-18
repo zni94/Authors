@@ -1,124 +1,21 @@
 #sns {
-  padding-top: 80px;
-  position: relative;
-  background-color: #fff;
-  transition: all .5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
 
-  .contents-layout {
-    #snsImg {
-      width: 100%;
-      height: 180px;
-      background-image: url('../../img/background_img_sns.jpg');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-origin: content-box;
-      margin-bottom: 6rem;
-    }
+  #contentsBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 
-    .contents-body {
+    [is='contents'] {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
-
-      iframe {
-        margin-right: 30px;
-        flex: 1 1;
-      }
-
-      div {
-        margin-left: 30px;
-        flex: 1 1;
-
-        p {
-          color: #bbb;
-          transition: all 1.5s;
-        }
-      }
-    }
-
-    .authors-btn {
-      border: 2px solid red !important;
-
-      span {
-        background-color: red !important;
-      }
-
-      p {
-        color: red !important;
-      }
-    }
-
-    .authors-btn:hover {
-      p {
-        color: #fff !important;
-      }
+      justify-content: center;
     }
   }
-}
 
-#sns.active {
-  .contents-layout {
-    .contents-body {
-      div {
-        p {
-          color: #000;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1420px) {
-  #sns {
-    .contents-layout {
-      height: 100%;
-      margin: 0 30px;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  #sns {
-    .contents-layout {
-      align-items: center;
-
-      #snsImg {
-        height: 90px;
-      }
-
-      .contents-body {
-        padding-right: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        iframe {
-          margin-right: 0;
-          flex: 1 1 auto;
-        }
-
-        div {
-          margin-left: 0;
-          flex: 1 1 auto;
-
-          p:not(:last-child) {
-            margin-bottom: 1.5rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-height: 768px) {
-  .contents-layout {
-    .contents-title {
-      margin-top: 50px;
-    }
-
-    .authors-btn {
-      margin-bottom: 50px;
-    }
-  }
 }

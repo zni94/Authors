@@ -1,14 +1,18 @@
-const Button = (props) =>{
-	const {openLink, btnName} = props;
+import "../lib/css/components/button.css";
 
-	const openerEvent = () =>{
-		window.open(openLink, '_blank');
-	}
+const Button = (props) => {
+  const { openLink, btnName } = props;
 
-	return <div className={'authors-btn'} onClick={openerEvent}>
-		<span/>
-		<p>{btnName}</p>
-	</div>
-}
+  const openerEvent = () => {
+    window.open(openLink, "_blank");
+  };
+
+  return (
+    <div className={"authors-btn"} onClick={openerEvent}>
+      <span />
+      <p>{btnName}</p>
+    </div>
+  );
+};
 
 export default Button;

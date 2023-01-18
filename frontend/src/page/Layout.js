@@ -1,28 +1,29 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import { useSelector } from "react-redux";
 
-import "../lib/css/layout.css";
 import "../lib/css/common.css";
 
 import Welcome from "./Welcome";
 import Header from "../component/Header";
-import Home from "./Home";
+import Footer from "../component/Footer";
+import Carousel from "./Carousel";
 import About from "./About";
 import Gallery from "./Gallery";
+import Notice from "./Notice";
 import SNS from "./SNS";
-import Contact from "./Contact";
-import Footer from "../component/Footer";
-import EmptySection from "../component/EmptySection";
 
 const Layout = () => {
   const { isLoading } = useSelector((state) => state.loadingStore);
 
-  const viewHandler = () => {
-    const layout = document.getElementById("layout");
-    document.querySelector("html").style.overflow = "auto";
-    document.exitFullscreen();
-    layout.classList.remove("view");
-  };
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const posY = window.scrollY;
+
+      const topBtn = document.getElementById("topBtn");
+      if (posY > 0) topBtn.style.opacity = "1";
+      else topBtn.style.opacity = "0";
+    });
+  }, []);
 
   return (
     <Fragment>
@@ -30,21 +31,13 @@ const Layout = () => {
         <Welcome />
       ) : (
         <div id={"layout"}>
-          <div id={"viewMode"} onClick={viewHandler}>
-            &times;
-          </div>
-          <div id={"backgroundImage"} />
           <Header />
           <section>
-            <Home />
-            <EmptySection index={0} />
+            <Carousel />
             <About />
-            <EmptySection index={1} />
             <Gallery />
-            <EmptySection index={2} />
+            <Notice />
             <SNS />
-            <Contact />
-            <EmptySection index={3} />
           </section>
           <Footer />
           <a id={"topBtn"} href={"#top"}>

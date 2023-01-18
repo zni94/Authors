@@ -1,0 +1,56 @@
+.instagram {
+  width: 480px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.instagram .ig-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 10px;
+}
+.instagram .ig-header #avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  margin-right: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.instagram .ig-header div {
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+}
+.instagram .ig-header div #nickname {
+  color: #000;
+  font-weight: 600;
+  font-size: var(--font-contents);
+}
+.instagram .ig-header div #follower {
+  font-size: var(--font-sub-contents);
+  color: #aaa;
+}
+.instagram .ig-header button {
+  flex: 1 auto;
+  background-color: dodgerblue;
+  width: 60px;
+  height: 32px;
+  border-radius: 5px;
+  font-size: var(--font-sub-contents);
+  cursor: pointer;
+  border: none;
+}
+.instagram .ig-body {
+  position: relative;
+}
+.instagram .ig-body img {
+  width: 100%;
+}
+.instagram .ig-footer {
+  background-color: #fff;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=instagram.css.map */

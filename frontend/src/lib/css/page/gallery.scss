@@ -1,63 +1,124 @@
 #gallery {
-  padding-top: 80px;
-  height: calc(100vh - 80px);
+  width: 100%;
+  height: 3070px;
+  text-align: center;
   position: relative;
-  background-color: rgba(0, 0, 0, 0);
+  background-image: url('../../img/background_img_gallery.jpg');
+  margin-bottom: 100px;
 
-  .contents-layout {
-    .contents-body {
-      flex: 1;
-      width: 100%;
+  #opacity {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  [is='summary'] {
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    position: absolute;
+
+    span {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    span:first-child {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  }
+
+  #summary1 {
+    top: 970px;
+    right: 320px;
+  }
+
+  #summary2 {
+    top: 2140px;
+    left: 320px;
+  }
+
+  .art {
+    position: absolute;
+    background-color: white;
+    margin: 0;
+
+    div {
+      opacity: 0;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-
-      button {
-        font-weight: 100;
-        font-size: .6rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        text-transform: uppercase;
-        cursor: pointer;
-        border: none;
-        outline: none;
-      }
-
-      span.material-symbols-outlined {
-        margin: 0 .25rem;
-      }
-    }
-  }
-}
-
-@media (max-width: 1420px) {
-  #gallery {
-    .contents-layout {
+      justify-content: center;
+      width: 100%;
       height: 100%;
-      margin: 0 30px;
-      align-items: center;
+      background-color: rgba(0, 0, 0, .7);
+      transition: all .5s;
 
-      .contents-body {
-        padding-right: 0;
+      p {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
 
+      p[is='sub-title'] {
+        font-weight: bold;
+        margin-bottom: 50px;
       }
     }
   }
-}
 
-@media (max-height: 768px) {
-  .contents-layout {
-    align-items: flex-start !important;
-
-    .contents-title {
-      margin-top: 50px;
+  .art:hover {
+    div {
+      opacity: 1;
     }
+  }
 
-    .authors-btn {
-      margin-bottom: 50px;
-    }
+  // Image Position
+  #img1 {
+    width: 480px;
+    height: 520px;
+    top: 350px;
+    right: 320px;
+    background-image: url('../../img/gallery/tattoo_1.jpg');
+  }
+
+  #img2 {
+    width: 420px;
+    height: 810px;
+    top: 540px;
+    left: 160px;
+    background-image: url('../../img/gallery/tattoo_2.jpg');
+  }
+
+  #img3 {
+    width: 520px;
+    height: 680px;
+    top: 1270px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../../img/gallery/tattoo_3.jpg');
+  }
+
+  #img4 {
+    width: 420px;
+    height: 810px;
+    top: 1870px;
+    right: 160px;
+    background-image: url('../../img/gallery/tattoo_4.jpg');
+  }
+
+  #img5 {
+    width: 480px;
+    height: 520px;
+    top: 2350px;
+    left: 320px;
+    background-image: url('../../img/gallery/tattoo_5.jpg');
   }
 }

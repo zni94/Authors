@@ -1,0 +1,38 @@
+// BUTTON{
+.authors-btn {
+  width: 320px;
+  height: 50px;
+  margin-top: 100px;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+
+  span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transition: all .25s;
+  }
+
+  p {
+    font-size: var(--font-contents);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.authors-btn:hover {
+  span {
+    width: 100%;
+  }
+
+  p {
+    color: #000;
+  }
+}
