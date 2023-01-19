@@ -11,10 +11,22 @@
   justify-content: space-evenly;
 }
 #sns #contentsBox [is=contents] {
+  flex: 1 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1280px) {
+  #sns #contentsBox {
+    max-width: 380px;
+    flex-direction: column;
+  }
+  #sns #contentsBox [is=contents] {
+    margin: 0;
+    margin-bottom: 200px;
+  }
 }
 
 /*# sourceMappingURL=sns.css.map */

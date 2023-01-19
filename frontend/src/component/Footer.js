@@ -12,7 +12,9 @@ const Footer = () => {
           <p is={"contents"}>Info</p>
           <p is={"sub-contents"}>
             <strong>Authors</strong>&emsp;|&emsp;
-            <strong>Owner.</strong>&nbsp;Authors_Yuri&emsp;|&emsp;
+            <strong>Owner.</strong>&nbsp;Authors_Yuri
+          </p>
+          <p is={"sub-contents"}>
             <strong>Location.</strong>&nbsp;Nonhyeon-dong, Gangnam-gu, Seoul
           </p>
           <p is={"sub-contents"}>

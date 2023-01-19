@@ -40,6 +40,7 @@
   position: absolute;
   background-color: white;
   margin: 0;
+  z-index: 10;
 }
 #gallery .art div {
   opacity: 0;
@@ -98,6 +99,39 @@
   top: 2350px;
   left: 320px;
   background-image: url("../../img/gallery/tattoo_5.jpg");
+}
+
+@media (max-width: 1520px) {
+  #gallery {
+    height: auto;
+  }
+  #gallery [is=summary] {
+    display: none;
+  }
+  #gallery .art {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  #gallery .art:not(:last-child) {
+    margin-bottom: 50px;
+  }
+  #gallery #img1, #gallery #img2, #gallery #img3, #gallery #img4, #gallery #img5 {
+    max-width: 560px;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+  }
+}
+@media (max-width: 1280px) {
+  #gallery #img1, #gallery #img2, #gallery #img3, #gallery #img4, #gallery #img5 {
+    max-width: 320px;
+  }
 }
 
 /*# sourceMappingURL=gallery.css.map */

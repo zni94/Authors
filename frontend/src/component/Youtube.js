@@ -23,8 +23,7 @@ const Youtube = () => {
         </div>
         <div className={"yb-body"}>
           <iframe
-            width="620"
-            height="380"
+            height={"380"}
             src="https://www.youtube-nocookie.com/embed/Scni6nLKm3M"
             title="YouTube video player"
             frameBorder="0"

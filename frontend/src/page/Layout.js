@@ -43,7 +43,42 @@ const Layout = () => {
               ↑
             </a>
           </div>
-          <div></div>
+
+          <div id={"pop"}>
+            <div id={"pop-header"}>
+              <strong>Welcome Authors</strong>
+              <br />
+              <br />
+              <p is={"sub-contents"}>
+                This webpage is designed for your PC environment. When operating
+                in mobile and tablet environments, some animation functions may
+                not function normally.
+              </p>
+              <p is={"sub-contents"}>
+                Therefore, it is recommended that you see through the PC for a
+                more accurate picture appreciation and explanation of the work.
+              </p>
+              <p is={"sub-contents"}>
+                If you want to proceed with a mobile device, you can see the
+                description of the work by touching each picture to appreciate
+                the picture.
+              </p>
+              <p is={"sub-contents"}>
+                I would appreciate it if you could refer to this point.
+              </p>
+              <p is={"sub-contents"}>Thank you.</p>
+            </div>
+            <div id={"pop-footer"}>
+              <p
+                is={"sub-contents"}
+                onClick={() => {
+                  document.getElementById("pop").style.display = "none";
+                }}
+              >
+                &times;&nbsp;close
+              </p>
+            </div>
+          </div>
         </>
       )}
     </Fragment>

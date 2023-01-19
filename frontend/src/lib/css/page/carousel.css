@@ -42,7 +42,7 @@
   height: 80px;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1280px) {
   #carousel #leftArrow {
     margin-left: 40px;
   }

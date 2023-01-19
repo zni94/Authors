@@ -1,5 +1,6 @@
 .youtube {
-  width: 620px;
+  width: 100%;
+  max-width: 620px;
   border: 1px solid rgba(0, 0, 0, .2);
   position: relative;
 
@@ -50,5 +51,15 @@
 
   .yb-body {
     position: relative;
+
+    iframe {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .youtube {
+    max-width: 360px;
   }
 }

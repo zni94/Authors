@@ -1,5 +1,6 @@
 .instagram {
-  width: 480px;
+  width: 100%;
+  max-width: 560px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   position: relative;
 }
@@ -73,6 +74,12 @@
   cursor: pointer;
   color: dodgerblue;
   text-decoration: underline;
+}
+
+@media (max-width: 1280px) {
+  .instagram {
+    max-width: 360px;
+  }
 }
 
 /*# sourceMappingURL=instagram.css.map */

@@ -111,5 +111,37 @@ footer {
   transition: all .5s;
 }
 
+#pop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #000;
+  position: fixed;
+  width: 360px;
+  height: 460px;
+  left: 50%;
+  top: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, .2);
+  z-index: 20;
+
+  #pop-header {
+    p:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  #pop-footer {
+    width: 100%;
+    padding: 10px 0;
+
+    p {
+      cursor: pointer;
+    }
+  }
+}
+
 
 
