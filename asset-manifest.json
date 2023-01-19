@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.7865e0d4.css",
-    "main.js": "/static/js/main.ea59c97e.js",
+    "main.css": "/static/css/main.e81295b7.css",
+    "main.js": "/static/js/main.6e700f6b.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
     "static/media/welcome_authors.mp4": "/static/media/welcome_authors.a728a78d2f4044d7d2fe.mp4",
-    "static/media/preview_2.jpg": "/static/media/preview_2.62fb8ed040adcb26cc8e.jpg",
-    "static/media/background_img_about.jpg": "/static/media/background_img_about.c0502b2dc9ce179cd9a7.jpg",
-    "static/media/preview_1.jpg": "/static/media/preview_1.3e7debc1eb8e3f052580.jpg",
-    "static/media/background_img_sns.jpg": "/static/media/background_img_sns.3173a2d5a01ebdc3e21d.jpg",
-    "static/media/preview_3.jpg": "/static/media/preview_3.3c08a3733b6355fc2e08.jpg",
-    "static/media/background_img_contact.jpg": "/static/media/background_img_contact.219df4d0156e7b439e29.jpg",
-    "static/media/authors_title.png": "/static/media/authors_title.fb021e76780973a80c36.png",
+    "static/media/carousel_2.jpg": "/static/media/carousel_2.62fb8ed040adcb26cc8e.jpg",
+    "static/media/background_img_gallery.jpg": "/static/media/background_img_gallery.c0502b2dc9ce179cd9a7.jpg",
+    "static/media/carousel_1.jpg": "/static/media/carousel_1.3e7debc1eb8e3f052580.jpg",
+    "static/media/carousel_3.jpg": "/static/media/carousel_3.3c08a3733b6355fc2e08.jpg",
+    "static/media/tattoo_sample_1.jpg": "/static/media/tattoo_sample_1.82076acd53c4267550fc.jpg",
+    "static/media/tattoo_4.jpg": "/static/media/tattoo_4.219df4d0156e7b439e29.jpg",
+    "static/media/tattoo_1.jpg": "/static/media/tattoo_1.f51e0b9d5f673c0fbd90.jpg",
+    "static/media/tattoo_5.jpg": "/static/media/tattoo_5.ad9a704cd98c7f5ddb62.jpg",
+    "static/media/tattoo_3.jpg": "/static/media/tattoo_3.f09dece16a9be76fc085.jpg",
+    "static/media/tattoo_2.jpg": "/static/media/tattoo_2.f888afcaa129b14aec19.jpg",
+    "static/media/authors_title.png": "/static/media/authors_title.8e8af56d2c971f467d16.png",
     "index.html": "/index.html",
-    "main.7865e0d4.css.map": "/static/css/main.7865e0d4.css.map",
-    "main.ea59c97e.js.map": "/static/js/main.ea59c97e.js.map",
+    "main.e81295b7.css.map": "/static/css/main.e81295b7.css.map",
+    "main.6e700f6b.js.map": "/static/js/main.6e700f6b.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7865e0d4.css",
-    "static/js/main.ea59c97e.js"
+    "static/css/main.e81295b7.css",
+    "static/js/main.6e700f6b.js"
   ]
 }
