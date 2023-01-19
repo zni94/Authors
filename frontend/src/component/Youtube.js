@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import youtube_avatar from "../lib/img/youtube_avatar.jpg";
+import youtube_avatar from "../lib/img/avatar/youtube_avatar.jpg";
 import "../lib/css/components/youtube.css";
 
 const Youtube = () => {

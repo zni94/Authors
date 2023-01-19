@@ -59,5 +59,32 @@
   .ig-footer {
     background-color: #fff;
     padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      width: 18px;
+      height: 18px;
+      border-radius: 100%;
+      border: 2px solid white;
+      margin-left: 10px;
+    }
+
+    span, strong {
+      color: black;
+      font-size: var(--font-sub-contents);
+    }
+
+    span {
+      margin-left: 5px;
+
+      strong#zniLink:hover {
+        cursor: pointer;
+        color: dodgerblue;
+        text-decoration: underline;
+      }
+    }
   }
 }

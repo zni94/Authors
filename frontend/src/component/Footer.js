@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 
-import icon_1 from "../lib/img/icon/kakao_icon.png";
-import icon_2 from "../lib/img/icon/insta_icon.png";
-import icon_3 from "../lib/img/icon/youtube_icon.png";
+import icon_kakao from "../lib/img/icon/kakao_icon.png";
+import icon_insta from "../lib/img/icon/insta_icon.png";
+import icon_youtube from "../lib/img/icon/youtube_icon.png";
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
           <p is={"contents"}>Info</p>
           <p is={"sub-contents"}>
             <strong>Authors</strong>&emsp;|&emsp;
-            <strong>Owner.</strong>&nbsp;Yuri&emsp;|&emsp;
+            <strong>Owner.</strong>&nbsp;Authors_Yuri&emsp;|&emsp;
             <strong>Location.</strong>&nbsp;Nonhyeon-dong, Gangnam-gu, Seoul
           </p>
           <p is={"sub-contents"}>
@@ -24,14 +24,14 @@ const Footer = () => {
           <p is={"contents"}>Social</p>
           <div id={"snsIcon"}>
             <img
-              src={icon_1}
-              alt={"kakao"}
+              src={icon_youtube}
+              alt={"youtube"}
               onClick={() => {
-                window.open("https://open.kakao.com/me/yuri_authors", "_blank");
+                window.open("https://www.youtube.com/@yuri_authors", "_blank");
               }}
             />
             <img
-              src={icon_2}
+              src={icon_insta}
               alt={"instagram"}
               onClick={() => {
                 window.open(
@@ -41,10 +41,10 @@ const Footer = () => {
               }}
             />
             <img
-              src={icon_3}
-              alt={"youtube"}
+              src={icon_kakao}
+              alt={"kakao"}
               onClick={() => {
-                window.open("https://www.youtube.com/@yuri_authors", "_blank");
+                window.open("https://open.kakao.com/me/yuri_authors", "_blank");
               }}
             />
           </div>

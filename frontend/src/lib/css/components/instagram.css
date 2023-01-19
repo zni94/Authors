@@ -51,6 +51,28 @@
 .instagram .ig-footer {
   background-color: #fff;
   padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.instagram .ig-footer img {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  border: 2px solid white;
+  margin-left: 10px;
+}
+.instagram .ig-footer span, .instagram .ig-footer strong {
+  color: black;
+  font-size: var(--font-sub-contents);
+}
+.instagram .ig-footer span {
+  margin-left: 5px;
+}
+.instagram .ig-footer span strong#zniLink:hover {
+  cursor: pointer;
+  color: dodgerblue;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=instagram.css.map */

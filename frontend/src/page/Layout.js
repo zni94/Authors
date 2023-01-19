@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 import "../lib/css/common.css";
 
 import Welcome from "./Welcome";
-import Header from "../component/Header";
 import Footer from "../component/Footer";
 import Carousel from "./Carousel";
 import About from "./About";
@@ -30,20 +29,22 @@ const Layout = () => {
       {isLoading ? (
         <Welcome />
       ) : (
-        <div id={"layout"}>
-          <Header />
-          <section>
-            <Carousel />
-            <About />
-            <Gallery />
-            <Notice />
-            <SNS />
-          </section>
-          <Footer />
-          <a id={"topBtn"} href={"#top"}>
-            ↑
-          </a>
-        </div>
+        <>
+          <div id={"layout"}>
+            <section>
+              <Carousel />
+              <About />
+              <Gallery />
+              <Notice />
+              <SNS />
+            </section>
+            <Footer />
+            <a id={"topBtn"} href={"#top"}>
+              ↑
+            </a>
+          </div>
+          <div></div>
+        </>
       )}
     </Fragment>
   );

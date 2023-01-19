@@ -1,7 +1,8 @@
 import { Fragment } from "react";
 
 import "../lib/css/components/instagram.css";
-import avatar from "../lib/img/avatar.jpg";
+import yuri_avatar from "../lib/img/avatar/instagram_avatar_yuri.jpg";
+import zni_avatar from "../lib/img/avatar/instagram_avatar_zni.jpg";
 import sample1 from "../lib/img/tattoo_sample_1.jpg";
 
 const Instagram = () => {
@@ -9,7 +10,7 @@ const Instagram = () => {
     <Fragment>
       <div className={"instagram"}>
         <div className={"ig-header"}>
-          <img id={"avatar"} src={avatar} alt={"avatar"} />
+          <img id={"avatar"} src={yuri_avatar} alt={"yuri"} />
           <div>
             <p id={"nickname"}>yuri_authors</p>
             <p id={"follower"}>Follower 10.1k</p>
@@ -32,6 +33,19 @@ const Instagram = () => {
               fill={"rgb(237, 73, 86)"}
             />
           </svg>
+          <img src={zni_avatar} alt={"zni"} />
+          <span>
+            <strong
+              id={"zniLink"}
+              onClick={() => {
+                window.open("https://www.instagram.com/zni._.inz/", "_blank");
+              }}
+            >
+              zni._.inz
+            </strong>
+            님&nbsp;
+            <strong>외 1,378,285명</strong>이&nbsp;좋아합니다.
+          </span>
         </div>
       </div>
     </Fragment>

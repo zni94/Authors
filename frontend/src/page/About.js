@@ -6,19 +6,15 @@ const About = () => {
     <Fragment>
       <div id={"about"}>
         <p is={"title"}>Who is Authors ?</p>
+        <p is={"contents"}>She is a female tattooist in South Korea.</p>
         <p is={"contents"}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
+          After graduating from Hongik University with a master's degree, I am
+          currently pursuing a Ph.D. program.
         </p>
         <p is={"contents"}>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout.
+          Her ability with tens of thousands of followers is already well known.
         </p>
-        <p is={"contents"}>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
-        </p>
+        <p is={"contents"}>Aren't you curious, too?</p>
       </div>
     </Fragment>
   );

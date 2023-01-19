@@ -4,7 +4,7 @@
   text-align: center;
   position: relative;
   background-image: url("../../img/background_img_gallery.jpg");
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 #gallery #opacity {
   width: 100%;
@@ -16,17 +16,13 @@
   z-index: 0;
 }
 #gallery [is=summary] {
-  width: 640px;
+  width: 560px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   text-align: left;
   position: absolute;
-}
-#gallery [is=summary] span {
-  margin-left: 50px;
-  margin-right: 50px;
 }
 #gallery [is=summary] span:first-child {
   font-weight: bold;
