@@ -8,7 +8,7 @@ const About = () => {
         <p is={"title"}>Who is Authors ?</p>
         <p is={"contents"}>She is a female tattooist in South Korea.</p>
         <p is={"contents"}>
-          After graduating from Hongik University with a master's degree, I am
+          After graduating from Hongik University with a master's degree, She's
           currently pursuing a Ph.D. program.
         </p>
         <p is={"contents"}>
